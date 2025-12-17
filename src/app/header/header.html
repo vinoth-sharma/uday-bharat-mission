@@ -1,0 +1,25 @@
+<header class="header">
+  <div class="container">
+
+    <!-- Logo -->
+    <div class="logo" routerLink="/home">
+      <img src="new_logo.png" alt="NGO Logo" />
+      <span>Uday Bharat</span>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+      <a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+      <!-- <a routerLink="/home" routerLinkActive="active">Home</a> -->
+      <a routerLink="/about" routerLinkActive="active">About</a>
+      <!-- <a routerLink="/projects" routerLinkActive="active">Projects</a> -->
+      <a routerLink="/contact" routerLinkActive="active">Contact</a>
+    </nav>
+
+    <!-- CTA -->
+    <!-- <div class="cta">
+      <a href="#" class="donate-btn">Donate</a>
+    </div> -->
+
+  </div>
+</header>

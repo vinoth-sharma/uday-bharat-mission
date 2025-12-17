@@ -1,0 +1,91 @@
+.vision {
+  background-color: #f9faf9;
+  padding: 80px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Section title */
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  color: #263238;
+}
+
+/* Grid layout */
+.vision-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+/* Card */
+.vision-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  }
+
+  h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 14px;
+    color: #263238;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #546e7a;
+  }
+}
+
+/* Icon */
+.icon {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    font-size: 32px;
+  }
+
+  &.green {
+    background-color: rgba(46, 125, 50, 0.1);
+    color: #2e7d32;
+  }
+
+  &.blue {
+    background-color: rgba(21, 101, 192, 0.1);
+    color: #1565c0;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .vision-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+}

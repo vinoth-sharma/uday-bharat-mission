@@ -1,0 +1,103 @@
+.hero {
+  position: relative;
+  height: 90vh;
+  min-height: 520px;
+  background-image: url('/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+/* Dark overlay for text readability */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.55),
+    rgba(0, 0, 0, 0.55)
+  );
+}
+
+/* Content */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 720px;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+/* Headline */
+h1 {
+  font-size: 52px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Subtext */
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 32px;
+  color: #f1f1f1;
+}
+
+/* CTA Buttons */
+.actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Primary Button */
+.primary {
+  background-color: #1565c0;
+  color: #ffffff;
+
+  &:hover {
+    background-color: #0d47a1;
+    transform: translateY(-2px);
+  }
+}
+
+/* Secondary Button */
+.secondary {
+  background-color: #f57c00;
+  color: #ffffff;
+
+  &:hover {
+    background-color: #ef6c00;
+    transform: translateY(-2px);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 120px 0 80px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
